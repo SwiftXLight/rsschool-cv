@@ -1,0 +1,54 @@
+body {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #29296e;
+  color: #ffffff;
+}
+
+main {
+  padding-left: 50px;
+}
+
+#contacts {
+  padding-left: 10px;
+  width: 85%;
+  border-left: 5px groove #32a852;
+  border-bottom: 5px groove #32a852;
+  margin-bottom: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-family: century-gothic, sans-serif;
+}
+
+h2 {
+  font-family: century-gothic, sans-serif;
+}
+
+.profile {
+  padding-left: 10px;
+  width: 85%;
+  border-left: 5px groove #32a852;
+  border-bottom: 5px groove #32a852;
+  margin-bottom: 30px;
+}
+
+.codeSource {
+  color: #32a67f;
+}
+
+.codeSource:visited {
+  color: #f2a0d0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#gitIcon {
+  margin-top: 15px;
+}
