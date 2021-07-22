@@ -1,1 +1,1 @@
-https://SwiftXLight.github.io/rsschool-cv/cv
+https://SwiftXLight.github.io/rsschool-cv/
