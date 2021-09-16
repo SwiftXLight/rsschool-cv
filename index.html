@@ -8,56 +8,91 @@
 </head>
 
 <body>
-   <header>
-      <h1>Andriy Panchenko</h1>
-   </header>
-   <main>
-      <div id="contacts">
-         <h2>Contacts:</h2>
-         <ul>
-            <li>email: andrevpanchenko@gmail.com</li>
-            <li>telegram: #AndriyBest</li>
-            <li>Bucha, Ukraine</li>
-            <li>mob: +380636062036</li>
-         </ul>
-      </div>
-      <article class="profile">
-         <h2>Profile:</h2>
-         <section>
-            <h3>About me:</h3>
-            <p>I am an 18 year student, who is interested in Web Dev and spending most of free time to learn Frontend.
-               I am able to quick learning and discovering new things.</p>
-         </section>
-         <section>
-            <h3>Skills:</h3>
-            <p>Basic knowledge in HTML, CSS, JS and Python, can work with Figma and Git.</p>
-         </section>
-         <section>
-            <h3>Code example:</h3>
-            <a class="codeSource"
-               href="https://github.com/SwiftXLight/reverse-int">https://github.com/SwiftXLight/reverse-int</a>
-         </section>
-         <section>
-            <h3>Education</h3>
-            <p>Student of State University of Infrastructure and Technology for specialty
-               automation and computer-integrated technologies (2020-2024)</p>
-         </section>
-         <section>
-            <h3>Human languages:</h3>
-            <ul>
-               <li>English: B2</li>
-               <li>Ukraine: native speaker</li>
-               <li>Russian: native speaker</li>
+   <div class="body-container">
+      <header class="header">
+         <h1>Andriy Panchenko</h1>
+         <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+               <span></span>
+            </label>
+            <ul class="menu__box">
+               <li><a class="menu__item" href="#contacts">Contacts</a></li>
+               <li><a class="menu__item" href="#profile">Profile</a></li>
+               <li><a class="menu__item" href="#about">About</a></li>
+               <li><a class="menu__item" href="#skills">Skills</a></li>
+               <li><a class="menu__item" href="#code">Code example</a></li>
+               <li><a class="menu__item" href="#projects">My projects</a></li>
+               <li><a class="menu__item" href="#education">Education</a></li>
+               <li><a class="menu__item" href="#languages">Human languages</a></li>
             </ul>
-         </section>
-      </article>
-   </main>
-   <footer>
-      <a class="codeSource" id="gitIcon" href="https://github.com/SwiftXLight">My github</a>
-      <p>2021</p>
-      <a class="codeSource" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg"
-            width="100" height="40" alt="Rsschool logo"></a>
-   </footer>
+         </div>
+      </header>
+      <main>
+         <div id="contacts">
+            <div>
+               <h2>Contacts:</h2>
+               <ul>
+                  <li>email: andrevpanchenko@gmail.com</li>
+                  <li>telegram: #AndriyBest</li>
+                  <li>Bucha, Ukraine</li>
+                  <li>mob: +380636062036</li>
+               </ul>
+            </div>
+            <img class="avatar" src="assets/github.jpg" alt="avatar">
+         </div>
+         <article class="profile" id="profile">
+            <h2>Profile:</h2>
+            <section id="about">
+               <h3>About me:</h3>
+               <p>I am an 18 year student, who is interested in Web Dev and spending most of free time to learn
+                  Frontend.
+                  I am able to quick learning and discovering new things.</p>
+            </section>
+            <section id="skills">
+               <h3>Skills:</h3>
+               <p>Basic knowledge in HTML, CSS, JS and Python, can work with Figma and Git.</p>
+            </section>
+            <section id="code">
+               <h3>Code example:</h3>
+               <pre><code class="language-js">
+function arrayDiff(a, b) {
+   let difference = a.filter(x => !b.includes(x));
+   return difference;
+}
+               </code></pre>
+            </section>
+            <section id="projects">
+               <h3>My projects:</h3>
+               <h4>Photofilter</h4>
+               <h5>This app change the css properties of image by changing range input<br>
+                  Main techologies are interaction with css-properties and their change with JS DOM events
+               </h5>
+               <a href="https://rolling-scopes-school.github.io/swiftxlight-JSFEPRESCHOOL/Photofilter">
+                  <img class="project" src="assets/photofilter-screenshot.png" alt="Photofilter app image"></a>
+            </section>
+            <section id="education">
+               <h3>Education</h3>
+               <p>Student of State University of Infrastructure and Technology for specialty
+                  automation and computer-integrated technologies (2020-2024)</p>
+            </section>
+            <section id="languages">
+               <h3>Human languages:</h3>
+               <ul>
+                  <li>English: B2</li>
+                  <li>Ukraine: native speaker</li>
+                  <li>Russian: native speaker</li>
+               </ul>
+            </section>
+         </article>
+      </main>
+      <footer>
+         <a class="codeSource" id="gitIcon" href="https://github.com/SwiftXLight">My github</a>
+         <p>2021</p>
+         <a class="codeSource" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg"
+               width="100" height="40" alt="Rsschool logo"></a>
+      </footer>
+   </div>
 </body>
 
 </html>
