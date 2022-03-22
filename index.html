@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>CV</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="body-container">
+      <header class="header">
+         <nav>
+            <ul>
+               <li><a href="#contacts">Contacts</a></li>
+               <li><a href="#skills">Skills</a></li>
+               <li><a href="#languages">Languages</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#code">Code</a></li>
+               <li><a href="#projects">Projects</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#courses">Courses</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div class="left-side">
+            <img class="avatar" src="assets/myPhoto2020.jpg" alt="avatar">
+            <section id="contacts">
+               <div>
+                  <h2>Contacts:</h2>
+                  <ul>
+                     <li>email: andrevpanchenko@gmail.com</li>
+                     <li>telegram: #Swift_Light</li>
+                     <li>Bucha, Ukraine</li>
+                     <li>mob: +380636062036</li>
+                  </ul>
+               </div>
+            </section>
+            <section id="skills">
+               <h2>Skills:</h2>
+               <ul>
+                  <li>HTML, CSS</li>
+                  <li>Javascript, TypeScript, nodeJS</li>
+                  <li>Git, GitHub</li>
+                  <li>VS Code</li>
+                  <li>Figma</li>
+               </ul>
+            </section>
+            <section id="languages">
+               <h2>Human languages:</h2>
+               <ul>
+                  <li>English: B2</li>
+                  <li>Ukraine: native speaker</li>
+                  <li>Russian: native speaker</li>
+               </ul>
+            </section>
+         </div>
+         <div class="right-side">
+            <h1>Andrii Panchenko</h1>
+            <section id="about">
+               <h2>About me:</h2>
+               <p>I am an 19 year student, who is interested in Web Dev and spending most of free time to learn Frontend.
+                   I am able to quick learning and discovering new things.</p>
+            </section>
+            <section id="code">
+               <h2>Code example:</h2>
+               <pre><code class="language-js">
+function arrayDiff(a, b) {
+   let difference = a.filter(x => !b.includes(x));
+   return difference;
+}
+               </code></pre>
+            </section>
+            <section id="projects">
+               <h2>My projects:</h2>
+               <div class="projects-container">
+                  <div class="project-item">
+                     <h3>Calculator</h3>
+                  <p>This is calculator app made with JS<br>
+                     Main techologies are JS and CSS Grid
+                  </p>
+                  <a href="https://swiftxlight.github.io/calculator/">
+                     <img class="project" src="assets/calculator-prev.png" alt="Calculator app image"></a>
+                  </div>
+                  <div class="project-item">
+                     <h3>Tic-tac-toe</h3>
+                     <p>This is web-game made with JS,<br>
+                        that also has light/dark theme switch
+                     </p>
+                     <a href="https://swiftxlight.github.io/TicTacToe/">
+                        <img src="assets/tic-tac-toe-prev.png" alt="Tic-tac-toe app image"></a>
+                  </div>
+               </div>
+            </section>
+            <section id="education">
+               <h2>Education</h2>
+               <p>Student of State University of Infrastructure and Technology for specialty
+                  automation and computer-integrated technologies (2020-2024)</p>
+            </section>
+            <section id="courses">
+               <h2>Courses</h2>
+               <ul>
+                  <li>JavaScript Manual on learnjavascript.ru (in progress)</li>
+                  <li>RS Schools Course «JavaScript/Front-end. Stage 0» (completed)</li>
+                  <li>RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)</li>
+               </ul>
+            </section>
+         </div>
+      </main>
+      <footer>
+         <a class="codeSource" id="gitIcon" href="https://github.com/SwiftXLight">My github</a>
+         <p>2022</p>
+         <a class="codeSource" href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg"
+               width="100" height="40" alt="Rsschool logo"></a>
+      </footer>
+   </div>
+</body>
+
+</html>
